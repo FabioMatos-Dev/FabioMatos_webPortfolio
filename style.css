@@ -546,15 +546,6 @@ a.btn:nth-child(2)::before{
 
 
 
-
-
-
-
-
-
-
-
-
 /*KeyFrames------------------------------------------------------------------*/
 
 @keyframes morph{
@@ -626,8 +617,4 @@ a.btn:nth-child(2)::before{
         width: 65%;
     }
 }
-
-
-
-
 

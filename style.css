@@ -143,7 +143,7 @@ span{
 }/*---Conferido OK-----------*/
 
 .home-content p{
-    color: #bdbdbd;
+    color:var(--text-color); 
     line-height: 1.6;
 }/*---Conferido OK----------*/
 
@@ -386,6 +386,175 @@ a.btn:nth-child(2)::before{
     font-weight: 600;
 }/*---Conferido OK----------*/
 
+
+/* Services Section css ------------------------------------------------------*/
+
+
+.main-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}/*---Conferido OK----------*/
+
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}/*---Conferido OK----------*/
+
+.main-text span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}/*---Conferido OK----------*/
+
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}/*---Conferido OK----------*/
+
+.section-services .service-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+}/*---Conferido OK----------*/
+
+.service-btn{
+    width: auto;
+    justify-content: center;
+}/*---Conferido OK----------*/
+
+.service-box:hover{
+    transform: translateY(-.7rem);
+}/*---Conferido OK----------*/
+
+.service-icon{
+    border: 2px solid var(--hover-color);
+    padding: 2rem;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    outline: 3px solid var(--bg-color);
+}/*---Conferido OK----------*/
+
+.service-box h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}/*---Conferido OK----------*/
+
+.service-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+}/*---Conferido OK----------*/
+
+/* Skills Section css ------------------------------------------------------------------------*/
+
+.skill{
+    background: var(--secon-bg-color);
+}/*---Conferido OK----------*/
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}/*---Conferido OK----------*/
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}/*---Conferido OK----------*/
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}/*---Conferido OK----------*/
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}/*---Conferido OK----------*/
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .html{
+    width: 90%;
+    animation: html 1s;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .css{
+    width: 97%;
+    animation: css 2s;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .javascript{
+    width: 83%;
+    animation: javascript 3s;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .python{
+    width: 93%;
+    animation: python 4s;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .c{
+    width: 77%;
+    animation: c 5s;
+}/*---Conferido OK----------*/
+
+.skill-bar .bar .mysql{
+    width: 65%;
+    animation: mysql 6s;
+}/*---Conferido OK----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*KeyFrames------------------------------------------------------------------*/
 
 @keyframes morph{
@@ -403,6 +572,62 @@ a.btn:nth-child(2)::before{
     80%{border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     }
 }/*---Conferido OK----------*/
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 97%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 83%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 93%;
+    }
+}
+
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 77%;
+    }
+}
+
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+
 
 
 

@@ -254,11 +254,11 @@ section{
 }/*---Conferido OK----------*/
 
 .btn:nth-child(2){
-    background: var(--bg-color);
+    background: var(--bg-color); 
     color: var(--hover-color);
 }/*---Conferido OK----------*/
 
-.button:nth-child(2):hover{
+.btn:nth-child(2):hover{
     color: var(--bg-color);
 }/*---Conferido OK----------*/
 
@@ -623,7 +623,7 @@ section{
     height: 120px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
 }/*---Conferido OK----------*/
 
 .circle .points{
@@ -646,7 +646,7 @@ section{
     text-align: center;
 }
 
-.fillter-buttons .button{
+.fillter-buttons .btn{
     background: none;
     outline: none;
     border: none;
@@ -658,7 +658,7 @@ section{
     color: var(--text-color);
 } 
 
-.fillter-buttons .button:hover{
+.fillter-buttons .btn:hover{
     color: var(--hover-color);
 }
 
@@ -815,8 +815,7 @@ footer a i{
 }
 
 
-
-/* parallax --------------------------------------------------------------------------------------------------------------------*/
+/*----------Parallax---NÃO FUNCIONOU----------------------*/
 .scroll-scale{
     opacity: 0;
     transform: scale(.9);
@@ -839,31 +838,6 @@ footer a i{
     opacity: 1;
     transform: translateX(0);
 }
-
-/*----------Parallax---NÃO FUNCIONOU--------------------------------------------------------------------------------------------------*/
-
-/*.scroll-scale{
-    opacity: 0;
-    transform: scale(.9);
-    transition: all 2s;
-}
-
-.scroll-bottom{
-    opacity: 0;
-    transform: translateY(300px);
-    transition: 3s;
-}
-
-.scroll-top{
-    opacity: 0;
-    transform: translateY(-300px);
-    transition: 3s;
-}
-
-.show-items{
-    opacity: 1;
-    transform: translateX(0);
-}*/
 
 
 

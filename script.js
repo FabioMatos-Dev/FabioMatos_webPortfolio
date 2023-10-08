@@ -48,8 +48,8 @@ circles.forEach(elem=>{
     var rotate = 360 / dots;
 
 
-    for(let i = 0; i < dots; i++){
-        points += '<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>';
+    for(let i=0; i<dots; i++){
+        points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
     }
     elem.innerHTML = points;
 
@@ -59,13 +59,7 @@ circles.forEach(elem=>{
     }
 })
 
-
-//MIX ITUP PORTFOLIO SECTION///////////////////////////////////////////////////////////////////////////////////////
-
-var mixer = mixitup(".portfolio-gallery");
-
-
-//ACTIVE MENU////////////////////////////////////////////////////////////////////////////////////////////////////
+//ACTIVE MENU/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let menuLi = document.querySelectorAll('header ul li a');
 let section = document.querySelectorAll('section');
@@ -81,30 +75,16 @@ function activeMenu(){
 activeMenu();
 window.addEventListener("scroll",activeMenu);
 
-//STICKY NAVBAR////////////////////////////////////////////////////////////////////////////////////////////////
 
-const header = document.querySelectorAll("header");
+//STICKY NAVBAR/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const header = document.querySelector("header");
 window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",this.window.scrollY > 50)
 })
 
 
-//TOGGLE ICON NAVBAR////////////////////////////////////////////////////////////////////////////////////////////////
-
-let menuIcon = document.querySelectorAll("#menu-icon");
-let navlist = document.querySelectorAll(".navlist");
-
-menuIcon.onclick = ()=>{
-    menuIcon.classList.toggle("bx-x");
-    navlist.classList.toggle("open");
-}
-
-window.onscroll = ()=>{
-    menuIcon.classList.remove("bx-x");
-    navlist.classList.remove("open");
-}
-
-//PARALLAX//////////////////////////////////////////////////////////////////////////////////////////////////////
+//PARALLAX/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{

@@ -815,7 +815,7 @@ footer a i{
 }
 
 
-/*----------Parallax---NÃO FUNCIONOU----------------------*/
+/*----------Parallax----------------------------------------*/
 .scroll-scale{
     opacity: 0;
     transform: scale(.9);
@@ -1056,4 +1056,3 @@ footer a i{
         font-size: 1rem;
     }
 }
-

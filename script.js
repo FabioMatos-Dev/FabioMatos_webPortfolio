@@ -59,21 +59,19 @@ circles.forEach(elem=>{
     }
 })
 
-//ACTIVE MENU/////////////////////////////////////////////////////////////////////////////////////////////////////
+//MIX IT UP PORTFOLIO SECTIO//////////////////////////////////////////////////////////////////////////////////////
 
-let menuLi = document.querySelectorAll('header ul li a');
-let section = document.querySelectorAll('section');
+//var mixer = mixitup(".container"); NÃO FUNCIONOU////////////////////////////////////////////////////////////////
 
+//TOGGLE ICON NAVBAR////////////////////////////////////////////////////////////////////////////////////////////////
 
-function activeMenu(){
-    let len = section.length;
-    while(--len && window.scrollY + 97 < section[len].offsetTop){}
-    menuLi.forEach(sec => sec.classList.remove("active"));
-    menuLi[len].classList.add("active");
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = ()=>{
+    menuIcon.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
 }
-
-activeMenu();
-window.addEventListener("scroll",activeMenu);
 
 
 //STICKY NAVBAR/////////////////////////////////////////////////////////////////////////////////////////////////////
